@@ -8,6 +8,15 @@ alias ap="aptitude"
 alias p="sudo pacman"
 alias ya="yaourt"
 
+
+# You may uncomment the following lines if you want `ls' to be colorized:
+export LS_OPTIONS='--color=auto'
+
+eval "`dircolors`"
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -l'
+alias l='ls $LS_OPTIONS -lA'
+
 # Nvidia Jetson TK1 cuda stuff
 #export PATH=/usr/local/cuda-6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 #export LD_LIBRARY_PATH=/usr/local/cuda-6.5/lib:
