@@ -25,7 +25,7 @@ function fish_prompt
     set -l cwd $blue(prompt_pwd)
     set -l white (set_color white)
     set -l green (set_color green)
-    set -l host $green(cat /etc/hostname)
+    set -l host $blue(cat /etc/hostname)
     if [ (_git_branch_name) ]
     	set git_info $green(_git_branch_name)
     	set git_info ":$git_info"
