@@ -1,4 +1,4 @@
-
+#wget https://is.gd/oxifishconfig > ~/.config/fish/config.fish
 #Command aliases. Because lazy
 #debian 
 alias ag "apt-get"
