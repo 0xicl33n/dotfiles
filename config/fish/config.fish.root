@@ -7,6 +7,12 @@ alias ap "aptitude"
 #arch linux
 alias p "sudo pacman"
 alias ya "yaourt"
+alias rtfm "man"
+#kr on arch
+set -g -x GTK_IM_MODULE 'ibus'
+set -g -x XMODIFIERS '@im=ibus'
+set -g -x QT_IM_MODULE 'ibus'
+
 function fish_greeting
 end
 #slightly forked from l theme 
