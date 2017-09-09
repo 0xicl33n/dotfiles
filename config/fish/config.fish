@@ -1,7 +1,8 @@
 #wget https://is.gd/oxifishconfig > ~/.config/fish/config.fish
 #Command aliases. Because lazy
-#debian 
-alias ag "apt-get"
+#debian
+alias a "sudo apt"
+alias ag "sudo apt-get"
 alias ap "aptitude"
 
 #arch linux
