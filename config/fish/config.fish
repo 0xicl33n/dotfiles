@@ -44,6 +44,13 @@ function fish_prompt
     echo -n -s $white'['$uzr$white'@'$host$white'['$cwd $git_info $white']'$white'$'
 end
 
+# Load pyenv automatically by adding
+# the following to ~/.config/fish/config.fish:
+
+set -x PATH "/home/pi/.pyenv/bin" $PATH
+status --is-interactive; and . (pyenv init -|psub)
+status --is-interactive; and . (pyenv virtualenv-init -|psub)
+
 
 #Nvidia Jetson TK1 cuda stuff for fish
 #set -gx PATH /usr/local/cuda-6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
