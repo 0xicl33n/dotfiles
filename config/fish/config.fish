@@ -47,9 +47,9 @@ end
 # Load pyenv automatically by adding
 # the following to ~/.config/fish/config.fish:
 
-set -x PATH "/home/pi/.pyenv/bin" $PATH
-status --is-interactive; and . (pyenv init -|psub)
-status --is-interactive; and . (pyenv virtualenv-init -|psub)
+#set -x PATH "/home/pi/.pyenv/bin" $PATH
+#status --is-interactive; and . (pyenv init -|psub)
+#status --is-interactive; and . (pyenv virtualenv-init -|psub)
 
 
 #Nvidia Jetson TK1 cuda stuff for fish
